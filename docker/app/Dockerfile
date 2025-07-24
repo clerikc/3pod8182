@@ -2,7 +2,7 @@
 FROM golang:1.24-alpine AS builder
 WORKDIR /app
 # Копируем go.mod из корня проекта
-COPY ../go.mod .
+COPY ./docker/app/go.mod .
 RUN go mod download
 # Копируем main.go из docker/app
 COPY ./docker/app/main.go .
