@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: go-app
-          image: ghcr.io/clerikc/3pod8182:latest  
+          image: 3pod8182:latest  
+          imagePullPolicy: Never
           ports:
             - containerPort: 8080
           env:
