@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: go-app
-          image: pod8182:latest  
+          image: ghcr.io/clerikc/3pod8182:latest  
           ports:
             - containerPort: 8080
           env:
